@@ -1,0 +1,5 @@
+flask
+numpy
+gunicorn
+opencv-contrib-python
+opencv-python
