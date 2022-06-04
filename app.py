@@ -1,4 +1,4 @@
-#from cv2 import VideoCapture
+from cv2 import VideoCapture
 import numpy as np
 import cv2
 import pyttsx3
