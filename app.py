@@ -1,9 +1,10 @@
 from cv2 import VideoCapture
 import numpy as np
 import cv2
+from cv2 import *
 import pyttsx3
 from flask import Flask,render_template, Response, url_for
-from requests import session
+#from requests import session
 import time
 
 app=Flask(__name__)
