@@ -6,5 +6,5 @@ opencv-contrib-python==4.5.5.64
 opencv-python==4.5.5.64
 opencv-python-headless==4.5.5.64
 pyttsx3==2.90
-werkzeug==2.0.3
-zipp==3.7.0
+#werkzeug==2.0.3
+#zipp==3.7.0
