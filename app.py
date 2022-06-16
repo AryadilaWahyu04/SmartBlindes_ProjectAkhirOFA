@@ -1,10 +1,8 @@
 from cv2 import VideoCapture
 import numpy as np
 import cv2
-from cv2 import *
 import pyttsx3
 from flask import Flask,render_template, Response, url_for
-#from requests import session
 import time
 
 app=Flask(__name__)
@@ -54,14 +52,15 @@ def generate_frames():
             frame=buffer.tobytes()
             yield(b'--frame\r\n'b'Content-Type: image/jpg\r\n\r\n' + frame + b'\r\n')
             
-        key = cv2.waitKey(0)
+    
+    key = cv2.waitKey(0)
 
 @app.route('/')
 def index():
     return render_template('index.html')
-@app.route('/deskripsi')
+@app.route('/projek')
 def deskripsi():
-    return render_template('deskripsi.html')
+    return render_template('projek.html')
 @app.route('/team')
 def team():
     return render_template('team.html')
@@ -73,4 +72,4 @@ def video_feed():
     
 
 if __name__=="__main__":
-    app.run(debug=True)
+    app.run()

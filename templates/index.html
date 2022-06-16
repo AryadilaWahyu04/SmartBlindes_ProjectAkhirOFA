@@ -3,12 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> Object Detection</title>
+  <title> Smart Blindes Kelompok 7 - Al Al-Khawarizmi</title>
   <link rel="stylesheet" type="text/css" href="static/style/style.css">
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <link rel="stylesheet" href="{{url_for ('static', filename='bootstrap/css/bootstrap.min.css') }}">
 </head>
 
@@ -23,7 +24,7 @@
           <i class="fas fa-times"></i>
         </div>
         <li><a href="{{url_for ('index')}}">Beranda</a></li>
-        <li><a href="deskripsi">Scan Objek</a></li>
+        <li><a href="projek">Scan</a></li>
         <li><a href="team">Team</a></li>
       </ul>
       <div class="icon menu-btn">
@@ -54,9 +55,10 @@
   </script>
   <br> </br>  
   <div>
-    <h1 style="justify-content: center; text-align:center"> Object Detection With Text To Speech</h1>
-    <p class="keterangan"> Object Detection With Text To Speech ini adalah sebuah projek akhir kelompok 7 kelas Al-Khawarizmi Orbit Future Academy yang dapat membantu seseorang penderita tuna netra.
-      cara kerjanya adalah mengarahkan kamera ke segala arah untuk menemukan objek dan nantinya akan muncul suara sebagai petunjuk
+    <h1 style="justify-content: center; text-align:center">Smart Blindes</h1>
+    <h1 style="justify-content: center; text-align:center"> (Object Detection Speech For Help Blind People)</h1>
+    <p class="keterangan"> Smart Blindes adalah hasil karya projek akhir yang dibuat oleh kelompok 7 kelas Al-Khawarizmi Orbit Future Academy yang dapat membantu seseorang penderita tuna netra.
+    cara kerjanya adalah mengarahkan kamera ke segala arah untuk menemukan objek dan nantinya akan muncul suara sebagai petunjuk
     </p>
     <br> </br>
     <!--<video width="100%" height="100%" muted playsinline preload="metadata"  src="https://www.youtube.com/embed/HXDD7-EnGBY"></video>-->
@@ -65,14 +67,21 @@
 
     <form class="form">
       <label style="font-weight:bold ;">Latar Belakang :</label>
-      <p> banyak sekali kasus penderita tuna netra tertabrak kendaraan karena memiliki masalah pada mata</p>
+      <p>Saat ini teknologi semakin berkembang dengan pesat, banyak kemudahan yang kita dapat melalui teknologi. Namun semua kemajuan itu tidak dapat menjangkau oleh orang yang memiliki keterbatasan penglihatan atau tuna netra, oleh karena itu sangat di butuhkan suatu alat yang dapat mendeteksi object dan menghasilkan suara untuk memberi tahu kepada tuna netra yang ada di sekitarnya. Project ini bertujuan untuk membantu para tuna netra mendeteksi objek yang berada di sekitarnya dengan menggunakan algoritma deep learning mobilenet ssd untuk memudahkan mendapatkan informasi mengenai objek yang ada di sekitarnya.</p>
       <br></br>
       <label style="font-weight: bold;">Implementasi :</label>
-      <p> Website Ini dapat digunakan oleh seseorang yang menderita penyakit mata atau tuna netra dengan harapan dapat membantu dalam kegaiatan aktivitas sehari-hari</p>
+      <p> Website Ini dapat digunakan oleh seseorang yang menderita gangguan penglihatan atau tuna netra dengan harapan dapat membantu aktivitas sehari-hari</p>
       <img src="static/images/obde.png" class="imgim">
       <br></br>
-      <label style="font-weight:bold;">Panduan Penggunaan Website :</label>
-      <p> Untuk Penggunaan adalah dengan cara masuk ke dalam menu projek maka secara otomatis akan menampilkan kamera</p>
+      <label style="font-weight:bold;">Panduan Penggunaan Smart Blindes:</label>
+      <p>1. Jalankan Website Smart Blindes<br>
+         2. Masuk ke menu Scan<br>
+         3. berikan akses kamera<br>
+         4. tunggu hingga website menampilkan kamera<br>
+         5. jika kamera sudah muncul maka coba arahkan ke objek atau benda di sekitar<br>
+         6. suara akan berbunyi jika salah satu objek tertangkap oleh kamera<br>
+         7. suara berbunyi dengan jeda waktu 1 detik<br>
+      </p>
       <br></br>
     </form>
   </div>

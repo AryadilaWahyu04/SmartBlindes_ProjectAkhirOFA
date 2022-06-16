@@ -5,12 +5,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> Object Detection</title>
+    <title>Smart Blindes Kelompok 7 - Al Khawarizmi</title>
     <link rel="stylesheet" type="text/css" href="static/style/style.css">
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="{{url_for ('static', filename='bootstrap/css/bootstrap.min.css') }}">
 </head>
 
@@ -25,7 +26,7 @@
           <i class="fas fa-times"></i>
         </div>
         <li><a href="{{url_for ('index')}}">Beranda</a></li>
-        <li><a href="deskripsi">Scan Objek</a></li>
+        <li><a href="projek">Scan</a></li>
         <li><a href="team">Team</a></li>
       </ul>
       <div class="icon menu-btn">
@@ -57,17 +58,18 @@
   
   <br> </br>
   <div class="Deskripsi">
-  <h1 style="text-align:center"> Object Detection With Text To Speech</h1>
+  <h1 style="text-align:center"> Tentang Kami</h1>
   <br> </br>
-  <p class="keterangan"> Object Detection With Text To Speech ini adalah sebuah projek akhir kelompok 7 kelas Al-Khawarizmi Orbit Future Academy yang dapat membantu seseorang penderita tuna netra.
-      cara kerjanya adalah mengarahkan kamera ke segala arah untuk menemukan objek dan nantinya akan muncul suara sebagai petunjuk
+  <p class="keterangan"> Kami adalah sebuah kelompok gabungan yang berasal dari kelas Al-Khawarizmi dan kelas Artemis. kelompok ini dibuat dengan tujuan untuk menyelesaikan projek akhir berbasis Artificial Intelligence dalam program Magang dan Studi Independen Bersertifikat (MSIB) di PT Orbit Future Academy
   </p>
   </div>
-
+  <br>
+  
+  <h1 style="text-align:center"> Struktur Kelompok</h1>
   <section class="container">
     <div class = "card">
-      <h3> Leader Project</h3>
-      <img src="static/images/Mumu_Mujtahid.png" style="margin:20px 20px 50px 50px; height:200px; width:200px;">
+      <h3> Project Manager</h3>
+      <img src="static/images/Mumu_Mujtahid.png" style="margin:20px 20px 50px 50px; height:200px; width:200px;" class="imgteam">
       <h3>Mumu Mujtahid Fatwa</h3>
       <p style="font-size:16px;">Universitas Gadjah Mada</p>
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalMumu" style="margin:15px 15px 20px 20px;">
@@ -82,8 +84,8 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <h2> Leader Project </h2>
-              <img src="static/images/Mumu_Mujtahid.png" style="height: 200px; width: 200px;">
+              <h2> Project Manager </h2>
+              <img src="static/images/Mumu_Mujtahid.png" style="height: 200px; width: 200px; ">
               <h2> Mumu Mujtahid Fatwa</h2>
               <br> </br>
               <form class="biodata">
@@ -112,8 +114,8 @@
 
   <section class="container2">
     <div class = "card">
-      <h3> Programmer</h3>
-      <img src="static/images/Wahyu_Arya.png" style="margin:20px 20px 50px 50px; height:200px; width:200px;">
+      <h3> Project Developer</h3>
+      <img src="static/images/Wahyu_Arya.png" style="margin:20px 20px 50px 50px; height:200px; width:200px;" class="imgteam">
       <h3>Wahyu Aryadila</h3>
       <p style="font-size:16px;">Universitas Amikom Purwokerto</p>
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalWahyu" style="margin:15px 15px 20px 20px;">
@@ -128,7 +130,7 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <h2> Programmer </h2>
+              <h2> Project Developer </h2>
               <img src="static/images/Wahyu_Arya.png" style="height: 200px; width: 200px;">
               <h2> Wahyu Aryadila</h2>
               <br> </br>
@@ -157,7 +159,7 @@
 
     <div class = "card">
       <h3> UX Research</h3>
-      <img src="static/images/siska_Tawari.png" style="margin:20px 20px 50px 50px; height:200px; width:200px;">
+      <img src="static/images/siska_Tawari.png" style="margin:20px 20px 50px 50px; height:200px; width:200px;" class="imgteam">
       <h3>Siska Tawari</h2>
       <p style="font-size: 16px;">Universitas Negeri Jakarta</p>
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalSiska" style="margin:15px 15px 20px 20px;">
@@ -203,8 +205,8 @@
   <section class="container3">
     <div class = "card">
       <h3>Data Collecting </h3>
-      <img src="static/images/Eka_Apri.png" style="margin:20px 20px 50px 50px; height:200px; width:200px;">
-      <h3>Eka Apri Setyawan</h3>
+      <img src="static/images/Eka_Apri.png" style="margin:20px 20px 50px 50px; height:200px; width:200px;" class="imgteam">
+      <h3>Eka Apri <br> Setyawan</h3>
       <p style="font-size: 16px;">UPN "Veteran" Yogyakarta</p>
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalEka" style="margin:15px 15px 20px 20px;">
         Detail
@@ -248,8 +250,8 @@
 
     <div class = "card">
       <h3> UI Designer</h3>
-      <img src="static/images/Dyan_Surya.png" style="margin:20px 20px 50px 50px; height:200px; width:200px;">
-      <h3>Dyan Surya</h3>
+      <img src="static/images/Dyan_Surya.png" style="margin:20px 20px 50px 50px; height:200px; width:200px;" class="imgteam">
+      <h3>Dyan Surya Firmansyah</h3>
       <p style="font-size:16px ;">Universitas Negeri Semarang</p>
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalDyan" style="margin:15px 15px 20px 20px;">
         Detail
@@ -450,6 +452,13 @@
 @media (max-width: 380px) {
   .navbar .logo a{
     font-size: 27px;
+  }
+}
+@media (max-width:400px) {
+  .imgteam {
+    width: 50px;
+    height: 50px;
+    margin : 0,0,0,0;
   }
 }
 </style>
